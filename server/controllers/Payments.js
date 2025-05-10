@@ -11,10 +11,15 @@ const CourseProgress = require("../models/CourseProgress");
 
 exports.capturePayment = async (req, res) => {
     //get courseId and UserID
+    // console.log(req.body);
     const {courses} = req.body;
     const userId = req.user.id;
     //validation
     //valid courseID
+
+    // console.log("req come");
+    
+
     try{
     if(courses.length === 0) {
         return res.json({
@@ -27,7 +32,7 @@ exports.capturePayment = async (req, res) => {
 
     for(const course_id of courses){
         let course;
-        // console.log("courseid=",course_id);
+         console.log("courseid=",course_id);
         try{
             course = await Course.findById(course_id);
             if(!course) {
