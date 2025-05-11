@@ -74,6 +74,14 @@ This project is intended as a learning tool and can be used as a sample project 
     npm run dev
     ```
 
+
+5 Live Link .
+ ```sh
+    https://lambent-jelly-18fff9.netlify.app/ 
+    Dummy Credinatls  sandipsannake@gmail.com
+    Password : 123456
+```
+
 5. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
 
 The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
